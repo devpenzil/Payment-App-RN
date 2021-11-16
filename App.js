@@ -8,10 +8,12 @@
 
 import React from 'react';
 import Home from './src/screens/Home';
+import Withdraw from './src/screens/Withdraw';
 const App = () => {
   return (
     <>
-      <Home />
+      {/* <Home /> */}
+      <Withdraw />
     </>
   );
 };

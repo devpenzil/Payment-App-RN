@@ -78,7 +78,7 @@ const Home = () => {
                 </View>
             </View>
             <ScrollView style={style.bottom}>
-                <FlatList data={transaction} renderItem={trrender} />
+                <FlatList data={transaction}  renderItem={trrender} />
             </ScrollView>
             <Bottombar />
         </View>
