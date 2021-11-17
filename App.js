@@ -7,13 +7,17 @@
  */
 
 import React from 'react';
+import Contacts from './src/screens/Contacts';
 import Home from './src/screens/Home';
+import PaymentSummary from './src/screens/PaymentSummary';
 import Withdraw from './src/screens/Withdraw';
 const App = () => {
   return (
     <>
       {/* <Home /> */}
-      <Withdraw />
+      {/* <Withdraw /> */}
+      {/* <Contacts /> */}
+      <PaymentSummary />
     </>
   );
 };
