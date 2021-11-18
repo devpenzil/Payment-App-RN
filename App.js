@@ -9,7 +9,9 @@
 import React from 'react';
 import Contacts from './src/screens/Contacts';
 import Home from './src/screens/Home';
+import InternetData from './src/screens/InternetData';
 import PaymentSummary from './src/screens/PaymentSummary';
+import SendMoney from './src/screens/SendMoney';
 import Withdraw from './src/screens/Withdraw';
 const App = () => {
   return (
@@ -17,7 +19,9 @@ const App = () => {
       {/* <Home /> */}
       {/* <Withdraw /> */}
       {/* <Contacts /> */}
-      <PaymentSummary />
+      {/* <PaymentSummary /> */}
+      {/* <SendMoney /> */}
+      <InternetData />
     </>
   );
 };

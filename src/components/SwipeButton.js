@@ -6,7 +6,7 @@ const SwipeButtons = props => {
   return (
     <View style={style.container}>
       <SwipeButton
-        disabled={false}
+        disabled={props.disabled}
         swipeSuccessThreshold={70}
         height={64}
         width={315}

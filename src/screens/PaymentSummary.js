@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TextInput, ScrollView} from 'react-native';
 import BackButton from '../components/BackButton';
 import SwipeButtons from '../components/SwipeButton';
 
@@ -22,6 +22,10 @@ const PaymentSummary = () => {
           <View style={style.box2}>
             <Text style={style.simplepackage}>Thomas Wise</Text>
             <Text style={style.desc}>0821 - 7654 - 3210</Text>
+            <View style={style.promo}>
+                <TextInput placeholder={'Promo code'} />
+                <Text style={style.apply}>Apply</Text>
+            </View>
           </View>
           <View style={style.box3}>
             <Text style={style.total}>Total</Text>
@@ -29,7 +33,7 @@ const PaymentSummary = () => {
           </View>
         </View>
       </View>
-      <SwipeButtons label={'Swipe to pay'} />
+      <SwipeButtons label={'Swipe to pay'} disabled={false} />
     </View>
   );
 };
@@ -118,4 +122,22 @@ const style = StyleSheet.create({
     color: '#3F3F65',
     fontWeight: '600',
   },
+  promo: {
+    borderColor: '#E7E7F6',
+    width: 275,
+    height: 50,
+    alignSelf: 'center',
+    marginTop: 20,
+    borderWidth:1,
+    borderRadius:15,
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'space-around',
+    alignItems:'center'
+  },
+  apply:{
+      fontSize:13,
+      color:'#32A7E2',
+      fontWeight:'600'
+  }
 });
